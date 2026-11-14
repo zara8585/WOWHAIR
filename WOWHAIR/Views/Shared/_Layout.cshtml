@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="fa " dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WOWHAIR</title>
+    <link href="~/lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/vendor/bootstrap.bundle.min.js"></script>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-fade navbar-fade">
+            <a class="brand" href="index.html" aria-label="Fade Barber Co. home">
+                <span class="brand__mark" aria-hidden="true"></span>
+                FA<span>DE</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#barbers">Barbers</a></li>
+                    <li><a href="#gallery">The Cuts</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#visit">Visit</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a class="btn-fade btn-fade--sm btn-fade--mobile" href="#book">Book appointment</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="nav-bag nav-cta-desktop" href="#shop" aria-label="Shopping bag">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+                    <span class="bag-count" aria-live="polite">0</span>
+                </a>
+                <a class="btn-fade btn-fade--sm nav-cta-desktop" href="#book">Book appointment</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container-fade">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a class="brand" href="index.html" style="margin-bottom:1rem">
+                        <span class="brand__mark" aria-hidden="true"></span>FA<span>DE</span>
+                    </a>
+                    <p>An old-school barbershop for the modern man. Skin fades, straight-razor shaves and beard work in the Ironside District since 2011.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Fade on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 3.05A6.75 6.75 0 1 0 18.75 12 6.75 6.75 0 0 0 12 5.25Zm0 11.13A4.38 4.38 0 1 1 16.38 12 4.38 4.38 0 0 1 12 16.38Zm6.95-11.4a1.58 1.58 0 1 1-1.58-1.57 1.58 1.58 0 0 1 1.58 1.57Z" /></svg></a>
+                        <a href="#" aria-label="Fade on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z" /></svg></a>
+                        <a href="#" aria-label="Fade on TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3a5.5 5.5 0 0 0 4.5 2.4v3a8.5 8.5 0 0 1-4.5-1.3v6.9a6 6 0 1 1-6-6c.34 0 .67.03 1 .09v3.1a3 3 0 1 0 2 2.83V3Z" /></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#barbers">Barbers</a></li>
+                        <li><a href="#gallery">The Cuts</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul class="footer-links">
+                        <li><a href="#visit">Hours</a></li>
+                        <li><a href="https://maps.google.com/?q=148+Ironside+Avenue+Portland+OR" target="_blank" rel="noopener">Directions</a></li>
+                        <li><a href="tel:+15550182245">(555) 018-2245</a></li>
+                        <li><a href="mailto:hello@fadebarber.co">hello@fadebarber.co</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Book a chair</h4>
+                    <p>Open seven days. Walk-ins welcome, or reserve online to skip the wait.</p>
+                    <a class="btn-fade btn-fade--sm" href="#book">Book appointment</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p style="margin:0">&copy; 2026 Fade Barber Co. All rights reserved.</p>
+                <p style="margin:0">Built with Bootstrap 5 · <a href="about.html">Our story</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
